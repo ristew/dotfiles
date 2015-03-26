@@ -1,3 +1,7 @@
 [user]
-	name = Riley Stewart
 	email = riley.a.stewart@vanderbilt.edu
+	name = Riley Stewart
+[credential]
+	helper = cache --timeout=7200
+[push]
+	default = matching

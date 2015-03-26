@@ -1,15 +1,48 @@
-execute pathogen#infect()
-
-filetype plugin on
-set autoread
 set ai
+set history=700
+filetype plugin on
+filetype indent on
+
+set autoread
+
+command W w !sudo tee % > /dev/null
+
+set ruler
+
+set hid
+
+set backspace=eol,start,indent
+set ignorecase
+
 set hlsearch
 set incsearch
+
 set magic
+
+set showmatch
+set mat=2
+
 syntax enable
-colorscheme desert
+try
+	colorscheme desert
+catch
+endtry
+
+set background=dark
+
+set encoding=utf8
+
+set ffs=unix,dos,mac
+
 set noswapfile
+
+set expandtab
+set smarttab
 set shiftwidth=4
 set tabstop=4
 set si
+set wrap
+map j gj
+map k gk
+
 
