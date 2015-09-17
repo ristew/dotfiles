@@ -1,6 +1,6 @@
 !urxvt color scheme:
 
-URxvt*background: #242424
+URxvt*background: #121212
 URxvt*foreground: #DEDEDE
 
 URxvt*colorUL: #86a2b0
@@ -9,7 +9,7 @@ URxvt*colorUL: #86a2b0
 URxvt*color0  : #2E3436
 URxvt*color8  : #555753
 ! red
-URxvt*color1  : #CC0000
+URxvt*color1  : #DC1010
 URxvt*color9  : #EF2929
 ! green
 URxvt*color2  : #4E9A06
@@ -32,17 +32,19 @@ URxvt*color15 : #EEEEEC
 
 !urxvt fonts: 
 
-!URxvt*font: xft:Monospace:pixelsize=12
-!URxvt*boldFont: xft:Monospace:bold:pixelsize=12
+URxvt*font: xft:Monospace:pixelsize=12
+URxvt*boldFont: xft:Monospace:bold:pixelsize=12
 
 
 !urxvt extensions:
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
 
-!URxvt.perl-ext-common:  default,matcher,tabbedex
+URxvt.perl-ext-common:  default,matcher,tabbedex,clipboard
 
 !enabling clickable links:
 
-!URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.urlLauncher:      /usr/bin/firefox
 !URxvt.matcher.button:   1 
 
 !urxvt scrolling options and cursor style:
